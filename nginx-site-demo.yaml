@@ -54,9 +54,9 @@ spec:
         items:
           - key: nginx-default.conf
             path: default.conf
-     - name: web-volume
-       persistentVolumeClaim:
-         - claimName: pvc-web
+    - name: web-volume
+      persistentVolumeClaim:
+        - claimName: pvc-web
 ---
 apiVersion: v1
 kind: Service
